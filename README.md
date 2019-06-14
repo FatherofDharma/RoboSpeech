@@ -15,6 +15,11 @@ _This program should return a range of numbers from 0 -to the number inputted by
 * Example input: 4
 * Example output: [0,1,2,3,4]
 
+_This program should replace any number containing 3 with the phrase "I'm sorry Dave, I can't do that."_
+
+* Example input: 4
+* Example output: [0,1,2,I'm sorry Dave, I can't do that,4]
+
 ## Requirements for Installation and Setup.
 
 * _You will need a web browser to use this website._
