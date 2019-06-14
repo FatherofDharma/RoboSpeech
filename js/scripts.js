@@ -24,14 +24,11 @@ function convertNumber(num) {
     }
   return range;
 }
-
 //User Interface section of code.
-
 $(document).ready(function() {
   $("form#number").submit(function(event) {
       event.preventDefault();
       var input = $('#numberInput').val();
-
       var result = convertNumber(input);
       $("#result").text(result);
       $("#halpic").show();
