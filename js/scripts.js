@@ -1,16 +1,29 @@
 //Business logic section of code.
 
 //This function creates an array containing the number range from 0 to the input number.
+// function numberRange(num) {
+// 	var range = []
+//   var dave = "I'm sorry, Dave. I'm afraid I can't do that."
+// 	for(var i = 0; i <= num; i++) {
+// 	   range.push(i)
+//   }
+//   return range
+// }
+// console.log(numberRange(23));
+
 function numberRange(num) {
-	var range = []
-	for(var i = 0; i <= num; i++) {
-  	range.push(i)
+  var range = [];
+  var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
+  for (var i = 0; i <= num; i++) {
+    if (i.toString().match(/3/) != null) {
+    range.push(dave)
+    } else
+  	  range.push(i)
+
   }
   return range
 }
-console.log(numberRange(11));
-
-
+console.log(numberRange(23));
 
 
 
@@ -19,11 +32,15 @@ console.log(numberRange(11));
 
 //User Interface section of code.
 
-$(document)ready.(function() {
+$(document).ready(function() {
+  console.log("hello from jquery");
   $("form#number").submit(function(event) {
       event.preventDefault();
-      var input = $('#number').val()
-      var result = convertRobo(input);
+      var input = $('#numberInput').val()
+      console.log(input);
+      var result = numberRange(input);
       $("#result").text(result);
   });
 });
+
+//var result = convertRobo(input);
