@@ -8,12 +8,12 @@
     <script src="js/scripts.js"></script>
     <title>Robo Speech</title>
   </head>
-  <body>
+  <body onload="number.reset();">
     <div class="container" id="main">
       <h2>Please enter your numerical request.</h2>
       <form id="number">
-        Username <input type="text" name="username" required class="inputField" id="username" class=inputField><br>
-        <input type="number" id="numberInput" class="inputField" >
+        Username <input type="text" name="username" required class="inputField" id="username" class=inputField value=""><br>
+        <input type="number" id="numberInput" class="inputField" value="">
         <button type="submit" class="inputField" name="button">Request #.</button>
       </form>
       <div id="result" class="container">
