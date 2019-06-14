@@ -13,19 +13,20 @@
 
 function numberRange(num) {
   var range = [];
-  var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
-  var boop = "boop!"
-  var beep = "beep!"
+  var dave = " I'm sorry, Dave. I'm afraid I can't do that.";
+  var boop = " boop!"
+  var beep = " beep!"
   for (var i = 0; i <= num; i++) {
     if (i.toString().match(/3/) != null) {
-    range.push(dave)
+      range.push(dave);
     } else if (i.toString().match(/2/) != null) {
-      range.push(boop)
+        range.push(boop);
+    } else if (i.toString().match(/1/) != null) {
+        range.push(beep);
     } else
-  	  range.push(i)
-
-  }
-  return range
+  	  range.push(" " + i);
+    }
+  return range;
 }
 console.log(numberRange(23));
 
