@@ -35,5 +35,6 @@ $(document).ready(function() {
       var input = $('#numberInput').val()
       var result = convertNumber(input);
       $("#result").text(result);
+      $("#hal").show();
   });
 });
