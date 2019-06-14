@@ -5,18 +5,22 @@ body {
 }
 
 #main {
-  text-align: center;s
+  text-align: center;
 }
 
 #result {
   padding: 10px;
   color: white;
-  text-align: left;
 }
-
-img {
+#halpic {
+  display: none;
   align-content: center;
-  margin: 1%;
+}
+img {
+
+  display:block;
+  text-align: center;
+  margin: 0 auto;
   height: 50%;
   width: 50%;
 }

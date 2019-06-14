@@ -5,8 +5,9 @@ function convertNumber(num) {
   var range = [];
   var username = $('#username').val();
   var dave = " I'm sorry, " + username + ", I'm afraid I can't do that.";
-  var boop = " Boop!"
-  var beep = " Beep!"
+  var boop = " Boop!";
+  var beep = " Beep!";
+  var zero = " Enter the void!";
   //This loop cycles from 0 to the users input number.
   for (var i = 0; i <= num; i++) {
     //This identifies any numbers containing 3 and replaces it with "dave", 2's with "boop", and 1's with "beep."
@@ -16,17 +17,13 @@ function convertNumber(num) {
         range.push(boop);
     } else if (i.toString().match(/1/) != null) {
         range.push(beep);
+    } else if (i.toString().match(/0/) != null) {
+        range.push(zero);
     } else
   	  range.push(" " + i);
     }
   return range;
 }
-
-
-
-
-
-
 
 //User Interface section of code.
 
@@ -37,6 +34,6 @@ $(document).ready(function() {
 
       var result = convertNumber(input);
       $("#result").text(result);
-      $("#hal").show();
+      $("#halpic").show();
   });
 });
