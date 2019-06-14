@@ -6,7 +6,9 @@ function convertNumber(num) {
   var dave = " I'm sorry, Dave. I'm afraid I can't do that.";
   var boop = " Boop!"
   var beep = " Beep!"
+  //This loop cycles from 0 to the users input number.
   for (var i = 0; i <= num; i++) {
+    //This identifies any numbers containing 3 and replaces it with "dave", 2's with "boop", and 1's with "beep."
     if (i.toString().match(/3/) != null) { //found this simple solution to finding a specific number in the string, on stack overflow.
       range.push(dave);
     } else if (i.toString().match(/2/) != null) {
@@ -35,5 +37,3 @@ $(document).ready(function() {
       $("#result").text(result);
   });
 });
-
-//var result = convertRobo(input);
