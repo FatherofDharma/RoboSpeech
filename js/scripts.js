@@ -4,8 +4,8 @@
 function convertNumber(num) {
   var range = [];
   var dave = " I'm sorry, Dave. I'm afraid I can't do that.";
-  var boop = " boop!"
-  var beep = " beep!"
+  var boop = " Boop!"
+  var beep = " Beep!"
   for (var i = 0; i <= num; i++) {
     if (i.toString().match(/3/) != null) { //found this simple solution to finding a specific number in the string, on stack overflow.
       range.push(dave);
