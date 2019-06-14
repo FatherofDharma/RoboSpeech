@@ -18,17 +18,17 @@ _This program should return a range of numbers from 0 -to the number inputted by
 _This program should replace any number containing 3 with the phrase "I'm sorry Dave, I can't do that." This should take precedence over the rules for numbers 2 or 1._
 
 * Example input: 4
-* Example output: 0,1,2,I'm sorry Dave, I can't do that,4
+* Example output: 0,1,2,I'm sorry Dave, I can't do that.,4
 
 _This program should replace any number containing 2 with the phrase "boop" and should only take precedence over the rule for number 1._
 
 * Example input: 2
-* Example output: 0,1,boop
+* Example output: 0,1,Boop!
 
 _This program should replace any number containing 1 with the phrase "beep" and is the rule with the lowest precedence._
 
 * Example input: 1
-* Example output: 0, beep
+* Example output: 0, Beep!
 
 
 ## Requirements for Installation and Setup.

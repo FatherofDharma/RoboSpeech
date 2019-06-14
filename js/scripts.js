@@ -14,8 +14,8 @@
 function numberRange(num) {
   var range = [];
   var dave = "I'm sorry, Dave. I'm afraid I can't do that.";
-  var boop = "boop"
-  var beep = "beep"
+  var boop = "boop!"
+  var beep = "beep!"
   for (var i = 0; i <= num; i++) {
     if (i.toString().match(/3/) != null) {
     range.push(dave)
