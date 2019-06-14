@@ -3,7 +3,8 @@
 //This function creates an array containing the number range from 0 to the input number.
 function convertNumber(num) {
   var range = [];
-  var dave = " I'm sorry, Dave. I'm afraid I can't do that.";
+  var username = $('#username').val();
+  var dave = " I'm sorry, " + username + ", I'm afraid I can't do that.";
   var boop = " Boop!"
   var beep = " Beep!"
   //This loop cycles from 0 to the users input number.
@@ -32,7 +33,8 @@ function convertNumber(num) {
 $(document).ready(function() {
   $("form#number").submit(function(event) {
       event.preventDefault();
-      var input = $('#numberInput').val()
+      var input = $('#numberInput').val();
+
       var result = convertNumber(input);
       $("#result").text(result);
       $("#hal").show();

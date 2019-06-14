@@ -1,23 +1,31 @@
 body {
-  align-content: space-around;
   background-image: url(../img/milky-way.jpg);
   background-size: cover;
   color: white;
 }
 
+#main {
+  text-align: center;s
+}
+
 #result {
+  padding: 10px;
   color: white;
+  text-align: left;
 }
 
 img {
-  align-self: center;
+  align-content: center;
+  margin: 1%;
+  height: 50%;
   width: 50%;
 }
 
-button, #numberInput {
+.inputField {
   background-image: url(../img/milky-way.jpg);
   border-style: outset;
   border-color: silver;
   border-width: thick;
+  margin: 2px;
   color: white;
 }
