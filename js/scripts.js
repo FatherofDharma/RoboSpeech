@@ -4,7 +4,9 @@
 function convertNumber(num) {
   var range = [];
   var userName = $('#username').val();
-  var dave = " I'm sorry, " + userName + ", I'm afraid I can't do that.";
+  // var dave = " I'm sorry, " + userName + ", I'm afraid I can't do that.";
+  // Using string interpolation instead of contatenation. Practice with friend.
+  var dave = ` I'm sorry, ${userName}, I'm afraid I can't do that.`;
   var boop = " Boop!";
   var beep = " Beep!";
   var zero = " Enter the void!";
