@@ -17,7 +17,7 @@ function convertNumber(num) {
 
     // This identifies any numbers containing 3 and replaces it with 'dave', 2's
     // with 'boop', and 1's with 'beep.'
-    // I found this simple solution using to finding a specific number in a
+    // I found this simple solution to finding a specific number in a
     //string, using .match, on stack overflow.
     if (i.toString().match(/3/) != null) {
       range.push(dave);
